@@ -4,21 +4,20 @@
 
 Total reef fish biomass and associated socioeconomic, anthropogenic and environmental variables, and derived global MPA data for reproducing the analysis in the manuscript "A ten-fold gap in effective global marine protection." 
 
-A comprehensive description of the data included in this analysis can be found in the corresponding manuscript. Code for processing and reproducing the analysis in the corresponding manuscript are described under Code/Software below. 
+A comprehensive description of the derived data included in this analysis can be found in the corresponding manuscript. Code for processing and reproducing the analysis in the corresponding manuscript are described under Code/Software below. 
 
 ---
 
 ## Description of the data and file structure 
 
 GENERAL INFORMATION 
-1. Title of Dataset: 
+1. Title of Dataset: Global MPA effectiveness derived data 
 2. Author Information: Clausius, Ella 
-3. Date of data collection: 
+3. Date of data collection: 2004-2024
 4. Geographic location of data collection: Global
+   
 
 DATA & FILE OVERVIEW 
-
-Description of dataset: 
 
 File List: 
 File 1 Name: rls_biomass_grf_data.Rdata

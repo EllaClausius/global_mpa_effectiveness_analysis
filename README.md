@@ -1,5 +1,4 @@
-# global_mpa_effectiveness_analysis
-Data &amp; code for: A ten-fold gap in effective global marine protection 
+#Data &amp; code for: A ten-fold gap in effective global marine protection 
 
 --- 
 
@@ -58,11 +57,11 @@ DATA-SPECIFIC INFORMATION FOR: rls_biomass_grf_data.Rdata
 1. Number of variables: 19 
 2. Number of cases/rows: 2,382
 3. Variable list:
-   rls_site_code: unique Reef Life Survey shallow reef site identifier
-   latitude: latitude in decimal degrees of reef site
-   longitude: longitude in decimal degrees of reef site 
-   depth: mean depth in meters of survey transect
-   sst_mean: Mean sea surface temperature (SST) at the site over the two years preceding the date of survey
+   -rls_site_code: unique Reef Life Survey shallow reef site identifier
+   -latitude: latitude in decimal degrees of reef site
+   -longitude: longitude in decimal degrees of reef site 
+   -depth: mean depth in meters of survey transect
+   -sst_mean: Mean sea surface temperature (SST) at the site over the two years preceding the date of survey
    si_mean: silicate (mmol / m3)
    par_mean_mean: photosynthetically available radiation (Em2/day).
    chl_mean:  chlorophyll-a (mmol / m3)

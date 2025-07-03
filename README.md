@@ -7,17 +7,80 @@ Total reef fish biomass and associated socioeconomic, anthropogenic and environm
 A comprehensive description of the derived data included in this analysis can be found in the corresponding manuscript. Code for processing and reproducing the analysis in the corresponding manuscript are described under Code/Software below. 
 
 ---
+## System Requirements 
+Software Dependencies
+* R (>= 4.3.0)
+* R Packages:
+   * tidyverse (2.0.0)
+   * lubriate (1.9.4)
+   * janitor (2.2.1)
+   * sf (1.0-21)
+   * terra (1.8-54)
+   * biooracler (0.0.0.9000)
+   * future (1.58.0)
+   * purrr (1.0.4) 
+   * vip (0.4.1) 
+   * tune (1.3.0)
+   * ggplot2 (3.5.2)
+   * parsnip (1.3.2)
+   * workflows (1.2.0)
+   * rsample (1.3.0)
+   * recipes (1.3.1)
+   * dials (1.4.0)
+   * randomForest (4.7-1.2)
+   * ranger (0.17.0)
+   * patchwork (1.3.1)
+   * furrr (0.3.1)
+   * progressr (0.15.1)
+   * SpataialML (0.1.7)
+
+Tested Platforms 
+* Windows 10 (24H2)
+* Ubuntu (24.04 LTS) 
+
+Hardware Requirements
+* No special hardware required
+* Minimum: 8GB RAM, 2.5 GHz dual-core-processor
+* Recommended: 16GB RAM for large datasets
+
+## Installation Guide
+### Instructions
+
+Install from GitHub using devtools:
+
+install.packages("devtools")  # if not already installed
+devtools::install_github("EllaClausius/global_mpa_effectiveness_analysis")
+
+Or clone this repository and install locally:
+
+git clone https://github.com/EllaClausius/global_mpa_effectiveness_analysis.git
+setwd("global_mpa_effectiveness_analysis")
+devtools::install()
+Typical Install Time
+
+1–2 minutes on a standard desktop computer with internet access.
+
+## Performance Considerations
+One script in the package, 01_geographic_random_forest.R, performs model fitting and training across multiple sublocations or site clusters. This script is computationally intensive and has been designed to support parallel execution across multiple CPU cores to reduce runtime.
+
+Key Notes:
+
+On large datasets (e.g., >500 sites or high spatial resolution), the script may take 30 minutes to several hours to run serially.
+
+It is recommended to use the parallel package or future.apply to distribute processing across 4 or more cores, depending on available system resources.
+
+An example parallel setup is provided in the script documentation.
 
 ## Description of the data and file structure 
 
-GENERAL INFORMATION 
+### GENERAL INFORMATION 
 1. Title of Dataset: Global MPA effectiveness derived data 
 2. Author Information: Clausius, Ella 
 3. Date of data collection: 2004-2024
 4. Geographic location of data collection: Global
    
 
-DATA & FILE OVERVIEW 
+### DATA & FILE OVERVIEW 
 
 File List: 
 File 1 Name: rls_biomass_grf_data.Rdata
